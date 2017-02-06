@@ -1,5 +1,5 @@
 # Dashboard
-Ticketing Dashboard
+Ticketing Dashboard (AngularJS - Mysql - Php)
 
 # Developed on AngularJS, PHP Engine and Mysql Database.
 
