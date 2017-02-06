@@ -1,0 +1,6 @@
+
+Options +FollowSymLinks 
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^reclamoonline.com.ar [NC] 
+RewriteRule ^(.*)$ https://www.reclamoonline.com.ar/ [L,R=301]
+

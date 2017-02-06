@@ -1,0 +1,78 @@
+<div ng-controller="HeaderCtrl" md-theme="default" ng-cloak >
+  <md-content >
+    <md-toolbar class="md-hue-2" >
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" ng-click="openSideNavPanel()" ng-disabled="!signed">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </md-button>
+        <h2>
+          <a href="#/home"><span>Rec<i class="fa fa-exclamation page_color" aria-hidden="true"></i>amo On-Line </span></a>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="process('login')" aria-label="signin" ng-show="!signed" >
+		 <md-tooltip md-direction="bottom">Ingresar</md-tooltip>
+			<i class="fa fa-sign-in" aria-hidden="true"></i>
+        </md-button>
+        <md-button class="md-icon-button" ng-click="process('new_user')" aria-label="newuser" ng-show="!signed">
+			<md-tooltip md-direction="bottom">Registrarse</md-tooltip>
+			<i class="fa fa-plus" aria-hidden="true"></i> 
+        </md-button>
+        <md-button class="md-icon-button" ng-click="signout()" aria-label="signout" ng-show="signed">
+			<md-tooltip md-direction="bottom">Sign Out</md-tooltip>
+			<i class="fa fa-sign-out" aria-hidden="true"></i>
+        </md-button>
+
+      </div>
+    </md-toolbar>
+
+  </md-content>
+  <md-sidenav class="md-sidenav-left" md-theme="alt"   md-component-id="left">
+    <div layout="column"  md-theme="alt" >
+	
+		<div class="md-list-item secondary-button-padding text-rigth"   >
+			
+			<md-button class="md-icon-button" aria-label="Close Side Panel" ng-click="closeSideNavPanel()">
+			  <md-tooltip>Close Side Panel</md-tooltip>
+			  <md-icon class="md-default-theme" class="material-icons">&#xE5CD;</md-icon>
+			</md-button>
+		</div>
+		
+	  <md-card class="card-0dp" >
+		<md-card-title>
+		  <md-card-title-media >
+				<img  class="md-media-sm md-user-avatar rounded" src="{{User.picture}}"/>
+		  </md-card-title-media>
+		  <md-card-title-text layout-align="center center" >
+				<span class="md-body-2">{{User.name}} </span>
+				<span class="md-body-2">{{User.lastname}}</span>
+		  </md-card-title-text>
+		
+		</md-card-title>
+		
+	  </md-card>
+
+	
+    </div>
+			  
+    <md-content>
+	<md-list ng-cloak >
+			  <md-list-item ng-repeat-start="x in AsideTables" class="secondary-button-padding"  md-colors="{background: 'blue-grey-400'}">  <span>{{x.grupo}} </span> <md-button  ng-click="toggle(AsideTables.indexOf(x))" class="md-secondary" ><md-icon  class="material-icons" >expand_more</md-icon></md-button></md-list-item>
+			  
+			  <md-list-item  ng-repeat="y in x.tables" class="secondary-button-padding"  ng-if="view[AsideTables.indexOf(x)]" >
+				 
+				  <md-button id="text-left" ng-click="process(y.archivo)" flex>
+					<md-icon  class="material-icons md-mybutton" >subdirectory_arrow_right</md-icon>
+					<md-icon  class="material-icons md-mybutton">{{y.icono}}</md-icon>
+				  		{{checkqtty(y.modulo)}}
+				  </md-button>
+				
+				
+			  </md-list-item>
+		
+			  <md-divider ng-repeat-end ></md-divider>
+		
+	</md-list>
+    </md-content> 
+</md-sidenav>
+</div>
+

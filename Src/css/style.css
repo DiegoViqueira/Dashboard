@@ -1,0 +1,160 @@
+
+
+.page_color
+{
+  color:#ff6f00;
+}
+/*CREDITS*/
+.credits{text-decoration:none;padding:10px 10px 10px 10px;color: #6E6E6E; font-size: 1.1em;}
+.credits ul{list-style-type: none;}
+.credits ul li span a:visited { 
+    color:#ff6f00;
+}
+.credits ul li span  a { 
+    color: #ff6f00;
+}
+
+.fa-unread
+{
+	color:#ff6f00;
+}
+#text-left {
+    align-items: left;
+    text-align: left;
+}
+
+#sidenav-override
+{
+	max-width:300px;
+}
+
+.text-rigth {
+   
+    text-align: right;
+}
+
+#text-center {
+    text-align: center;
+}
+
+
+.text-center {
+    text-align: center;
+}
+.card-0dp {
+  box-shadow: none;
+}
+.rounded
+{
+	border-radius: 99%;
+}
+#md-card-header-page{padding:5px;}
+
+
+hr { border: 0;height: 1px;background-image:  linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(96,125,139,1) 49%, rgba(246,246,246,1) 100%); padding-right: 20%;padding-left: 20%;}
+
+
+      md-tabs {
+        display: flex;
+        flex-direction: column;
+      }
+      .md-tabs-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+      }
+      .md-tab-content {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
+	  
+#chart-container {
+  width:200px;
+  height:200px;
+}	  
+
+.drop-box {
+    background: rgb(255,255,255);
+    border: 5px dashed #DDD;
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    
+}
+
+.txtshadow
+{
+	font-family: 'Caveat';
+	font-size: 1.8em;
+}
+
+
+#background {
+    width: 100%; 
+    height: 50%; 
+    position: relative; 
+    left: 0px; 
+    top: 0px; 
+    
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+md-input-container .md-errors-spacer{
+ min-height: 0px !important;
+}
+
+
+.toast-ok
+{
+   background-color:green;
+}
+
+
+
+.toast-err
+{
+   background-color:#FF0000;
+}
+
+
+.md-wrn-toast-theme { background-color: #FF4000; }
+
+md-fab-speed-dial.md-fab-top-right {
+    top: 65px;
+    right: 20px;
+    bottom: auto;
+    left: auto;
+    position: fixed;
+}
+
+@media (max-device-width: 600px) {
+  md-fab-speed-dial.md-fab-top-right {
+    top: 65px;
+    right: 5px; } }
+
+.fabSpeedDialdemoMoreOptions .md-fab.demo-fab.trigger-fab:hover, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.trigger-fab.md-focused, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab:hover, .fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab.md-focused {
+  background-color: #333; }
+
+.fabSpeedDialdemoMoreOptions .md-fab.demo-fab.action-fab {
+  background-color: #aaa; }
+
+.fabSpeedDialdemoMoreOptions md-content div[flex="50"] {
+  padding: 15px; }
+
+.fabSpeedDialdemoMoreOptions md-fab-speed-dial {
+  margin-top: 89px; }
+  .fabSpeedDialdemoMoreOptions md-fab-speed-dial md-fab-trigger {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1); }
+  .fabSpeedDialdemoMoreOptions md-fab-speed-dial.md-scale.ng-hide-add.ng-hide-add-active, .fabSpeedDialdemoMoreOptions md-fab-speed-dial.md-fling.ng-hide-add.ng-hide-add-active {
+    display: flex !important; }
+  .fabSpeedDialdemoMoreOptions md-fab-speed-dial.md-scale.ng-hide md-fab-trigger, .fabSpeedDialdemoMoreOptions md-fab-speed-dial.md-fling.ng-hide md-fab-trigger {
+    transform: scale(0); }
+
+.fabSpeedDialdemoMoreOptions .intro {
+  padding-left: 5px; }
